@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Camerin Alambanzzz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- MUSIC -->
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" onclick="toggleMusic()">🎵</button>
+
+<!-- START SCREEN -->
+<div class="start-screen" id="startScreen">
+    <h1>Hey Testers... ❤️</h1>
+    <p>I made something special just for you</p>
+    <button onclick="startLove()">Tap to Begin</button>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="content hidden" id="content">
+
+    <!-- GALLERY -->
+    <h2>Our Little Memories 💕</h2>
+    <div class="gallery">
+        <!-- 21 PHOTOS -->
+        <!-- Copy & change image names if needed -->
+        <script>
+            for(let i=1;i<=21;i++){
+                document.write(`
+                <div class="polaroid">
+                    <img src="photo${i}.jpg" alt="Memory ${i}">
+                    <span>Memory ${i} ❤️</span>
+                </div>
+                `);
+            }
+        </script>
+    </div>
+
+    <!-- LOVE LETTER -->
+    <div class="letter">
+        <h2>For You, Team💌</h2>
+        <p id="typeText"></p>
+    </div>
+
+    <!-- FINAL -->
+    <div class="final">
+        <h1>You Guys Mean So Much ❤️</h1>
+        <p>Just wanted you to know that.</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
